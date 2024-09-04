@@ -83,7 +83,8 @@ public class WordsCounter {
             }
 
             this.giveStartSignal();
-            this.awaitCompletion();
+            this.awaitCompletion(); // The caller thread (here, Main thread) will wait for
+            // completion of the worker threads.
             System.out.println("Done with all the workers :) Bye.");
         }
     }
@@ -92,6 +93,7 @@ public class WordsCounter {
         int workerCount = 5;
         WordsCounter wordsCounter = new WordsCounter(workerCount);
         wordsCounter.runMyLatch(workerCount);
+        System.out.println("Main thread completes ...");
     }
 
     public static void main(String[] args) {

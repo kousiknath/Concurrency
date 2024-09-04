@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="78399fc2-8b4b-4c36-ada9-6730ae6e514b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concurrency/oddevenprinter/MultiThreadedPrinter_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concurrency/oddevenprinter/MultiThreadedPrinter_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/concurrency/wordscounter/WordsCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concurrency/wordscounter/WordsCounter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.WordCounter">
+  <component name="RunManager" selected="Application.FriendsOuting">
     <configuration name="APIRateLimiter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.concurrency.ratelimiter.APIRateLimiter" />
       <module name="Concurrency" />
@@ -56,12 +57,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiThreadedPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.concurrency.oddevenprinter.MultiThreadedPrinter" />
+    <configuration name="FriendsOuting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.concurrency.friendsouting.FriendsOuting" />
       <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.concurrency.oddevenprinter.*" />
+          <option name="PATTERN" value="com.concurrency.friendsouting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,8 +70,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiThreadedPrinter_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.concurrency.oddevenprinter.MultiThreadedPrinter_2" />
+    <configuration name="MultiThreadedPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.concurrency.oddevenprinter.MultiThreadedPrinter" />
       <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
@@ -95,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.concurrency.countdownlatch.WordCounter" />
+    <configuration name="WordsCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.concurrency.wordscounter.WordsCounter" />
       <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.concurrency.countdownlatch.*" />
+          <option name="PATTERN" value="com.concurrency.wordscounter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WordCounter" />
+        <item itemvalue="Application.FriendsOuting" />
+        <item itemvalue="Application.WordsCounter" />
         <item itemvalue="Application.APIRateLimiter" />
         <item itemvalue="Application.MultiThreadedPrinter_3" />
         <item itemvalue="Application.MultiThreadedPrinter" />
-        <item itemvalue="Application.MultiThreadedPrinter_2" />
       </list>
     </recent_temporary>
   </component>
