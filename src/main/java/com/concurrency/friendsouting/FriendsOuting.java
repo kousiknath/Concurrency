@@ -44,6 +44,34 @@ public class FriendsOuting {
         wait at the barrier so that thread associated with a cyclic barrier can
         do the integrity check. This integrity check can be done multiple
         times thanks to CyclicBarrier
+
+        "To compare both, the CountDownLatch is supposed to be used only 1 time and
+        a CyclicBarrier can be used as many times as the algorithm requires a
+        synchronization point for a set of threads."
+
+        From: https://stackoverflow.com/questions/10156191/real-life-examples-for-countdownlatch-and-cyclicbarrier
+
+        Use case 1 Suppose you have split a large job into 10 small tasks, each one a
+        thread. You have to wait for the 10 tasks' end from that threads before
+        considering the job done.
+
+        So the main job initiator thread initializes a CountDownLatch to the number
+        of threads used, it distributes tasks to threads and waits for the latch
+        raises zero with await method. Each executor thread will invoke countDown
+        at the end of its task. Finally the main thread will be waken when all threads
+        have finished so it considers the whole job is done. This scenario uses the
+        doneSignal latch describes in the CountDownLatch javadoc.
+
+        Use case 2 Suppose you have split a large job into a n * m tasks, distributed
+        over n threads. m corresponds to a matrix row and you have a total to compute
+        for each row. In that case, threads must be synchronized after each task ending
+        so that the total for the row is processed. In that case, a CyclicBarrier
+        initialized with the number of threads n is used to wait for the end of each
+        row computation (m times in fact).
+
+        To compare both, the CountDownLatch is supposed to be used only 1 time and a
+        CyclicBarrier can be used as many times as the algorithm requires a
+        synchronization point for a set of threads
      */
     private CyclicBarrier meetingPoint;
     public FriendsOuting(int friends, Runnable runnable) {
