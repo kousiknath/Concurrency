@@ -2,6 +2,12 @@ package com.concurrency.oddevenprinter;
 
 public class MultiThreadedPrinter_3 {
     static class Counter {
+        /*
+            Combining counter and state together helps to contain the
+            counter-related operations together in the same place.
+            Thus, it makes concurrency related code separate from the
+            main code and code changes are easier.
+         */
         private int count;
         private boolean state;
         public synchronized int even() {
@@ -35,6 +41,9 @@ public class MultiThreadedPrinter_3 {
         }
 
         private void waitForMonitor() {
+            // wait() notify() works only under the `synchronized` control block.
+            // Else, you get the exception like
+            // "java.lang.IllegalMonitorStateException: current thread is not owner"
             try{
                 wait();
             } catch (InterruptedException ex) {
