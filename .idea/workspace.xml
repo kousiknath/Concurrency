@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78399fc2-8b4b-4c36-ada9-6730ae6e514b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/concurrency/inmemorylog/InMemoryLogging.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -42,7 +43,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.FriendsOuting">
+  <component name="RunManager" selected="Application.InMemoryLogging">
     <configuration name="APIRateLimiter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.concurrency.ratelimiter.APIRateLimiter" />
       <module name="Concurrency" />
@@ -69,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiThreadedPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.concurrency.oddevenprinter.MultiThreadedPrinter" />
+    <configuration name="InMemoryLogging" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.concurrency.inmemorylog.InMemoryLogging" />
       <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.concurrency.oddevenprinter.*" />
+          <option name="PATTERN" value="com.concurrency.inmemorylog.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InMemoryLogging" />
         <item itemvalue="Application.FriendsOuting" />
         <item itemvalue="Application.WordsCounter" />
         <item itemvalue="Application.APIRateLimiter" />
         <item itemvalue="Application.MultiThreadedPrinter_3" />
-        <item itemvalue="Application.MultiThreadedPrinter" />
       </list>
     </recent_temporary>
   </component>

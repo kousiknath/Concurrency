@@ -5,4 +5,4 @@
 3. Recipe for counting words in a big file (Countdown Latch)
 4. Recipe for Friends Outing (Cyclic Barrier)
 5. Recipe for bank transaction (ReentrantLock)
-6. 
+6. Recipe for in-memory logging (ReadWriteLock)
