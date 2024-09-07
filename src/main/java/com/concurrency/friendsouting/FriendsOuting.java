@@ -104,6 +104,8 @@ public class FriendsOuting {
                 Thread thread = new Thread(new Friend(this.meetingPoint));
                 executorService.submit(thread);
             }
+
+            executorService.shutdown();
         }
     }
 

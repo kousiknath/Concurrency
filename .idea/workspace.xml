@@ -7,7 +7,7 @@
     <list default="true" id="78399fc2-8b4b-4c36-ada9-6730ae6e514b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concurrency/banktransaction/BankTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concurrency/banktransaction/BankTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/concurrency/friendsouting/FriendsOuting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concurrency/friendsouting/FriendsOuting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/concurrency/inmemorylog/InMemoryLogging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concurrency/inmemorylog/InMemoryLogging.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,19 +45,6 @@
   }
 }</component>
   <component name="RunManager" selected="Application.InMemoryLogging">
-    <configuration name="APIRateLimiter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.concurrency.ratelimiter.APIRateLimiter" />
-      <module name="Concurrency" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.concurrency.ratelimiter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FriendsOuting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.concurrency.friendsouting.FriendsOuting" />
       <module name="Concurrency" />
@@ -84,12 +71,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MultiThreadedPrinter_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.concurrency.oddevenprinter.MultiThreadedPrinter_3" />
+    <configuration name="ProducerConsumerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.concurrency.producerconsumer.ProducerConsumerApplication" />
       <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.concurrency.oddevenprinter.*" />
+          <option name="PATTERN" value="com.concurrency.producerconsumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProducerConsumerApplication_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.concurrency.producerconsumer.ProducerConsumerApplication_2" />
+      <module name="Concurrency" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.concurrency.producerconsumer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,10 +113,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.InMemoryLogging" />
+        <item itemvalue="Application.ProducerConsumerApplication_2" />
+        <item itemvalue="Application.ProducerConsumerApplication" />
         <item itemvalue="Application.FriendsOuting" />
         <item itemvalue="Application.WordsCounter" />
-        <item itemvalue="Application.APIRateLimiter" />
-        <item itemvalue="Application.MultiThreadedPrinter_3" />
       </list>
     </recent_temporary>
   </component>

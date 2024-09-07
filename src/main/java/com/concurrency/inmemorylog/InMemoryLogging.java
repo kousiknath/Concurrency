@@ -156,6 +156,8 @@ public class InMemoryLogging {
             executorService.submit(writerThread);
             executorService.submit(readerThread1);
             executorService.submit(readerThread2);
+
+            executorService.shutdown();
         }
     }
 
