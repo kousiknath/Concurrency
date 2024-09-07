@@ -6,3 +6,7 @@
 4. Recipe for Friends Outing (Cyclic Barrier)
 5. Recipe for bank transaction (ReentrantLock)
 6. Recipe for in-memory logging (ReadWriteLock)
+
+
+## On the plate (in no particular order):
+1. Recipe for producer-consumer model (Lock.Condition, wait notify)

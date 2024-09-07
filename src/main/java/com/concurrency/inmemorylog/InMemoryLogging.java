@@ -115,16 +115,31 @@ public class InMemoryLogging {
                     Some other thread interrupts the current thread, and interruption
                     of lock acquisition is supported; or
                     The specified waiting time elapses
-             */
+
+                Use cases for `tryLock()`:
+                    - If a thread has some alternative action to perform when lock
+                      acquisition has failed.
+                    - If there are some arbitrary (non very important) operations
+                      that can be performed by any thread occasionally, thus failing
+                      to acquire the lock is not really critical in nature.
+
+                More info: https://stackoverflow.com/questions/41788074/use-case-for-lock-trylock
+
+                `lock.tryLock()` does not suspend the incoming thread if the lock
+                acquisition has failed. So, the incoming thread can decide what to
+                do next based on the boolean result of the `tryLock()`.
+            */
             if (this.lock.readLock().tryLock(100, TimeUnit.MILLISECONDS)) {
-                if (i < this.log.size()) {
-                    return this.log.get(i);
+                try {
+                    if (i < this.log.size()) {
+                        return this.log.get(i);
+                    }
+                } finally {
+                    this.lock.readLock().unlock();
                 }
             }
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        } finally {
-            this.lock.readLock().unlock();
+        } catch (InterruptedException ex) {
+            throw new RuntimeException(ex);
         }
 
         return "";

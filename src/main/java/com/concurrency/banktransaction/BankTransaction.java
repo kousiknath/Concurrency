@@ -74,6 +74,43 @@ class SomeBankTransactionService implements BankTransactionService {
     @Override
     public void moveMoney(BankAccount source, BankAccount destination, long amount) {
         // Assuming the source account has enough balance
+        /*
+            Locking Best Practice:
+                YOU SHOULD ALWAYS TAKE THE LOCK BEFORE THE `try{}` BLOCK.
+
+                From: https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/locks/Lock.html#unlock--
+                    "A Lock implementation will usually impose restrictions on
+                    which thread can release a lock (typically only the holder
+                    of the lock can release it) and may throw an (unchecked)
+                    exception if the restriction is violated. Any restrictions
+                    and the exception type must be documented by that Lock
+                    implementation."
+
+                When a thread calls `lock.lock()` or `lock.lockInterruptibly()`,
+                there could be exceptions (unchecked exceptions) to prevent
+                the lock from being acquired.
+
+                If you place `lock.lock()` or `lock.lockInterruptibly()` constructs
+                inside the `try{}` block, even if lock acquisition had failed,
+                the `finally{}` block will execute trying to unlock the lock
+                by executing `lock.unlock()` (assuming you have put `lock.unlock()`
+                inside the `finally{}` block), thus throwing error like
+                `IllegalMonitorStateException` as the current thread could not
+                actually acquire the lock, thus it does not own the monitor.
+
+                So, putting the `lock()` or `lockInterruptibly()` outside the
+                `try{}` block prevents such exceptions as you never get to the
+                `finally{}` block trying to unlock the lock since the lock
+                acquisition itself failed.
+
+            More Info:
+                https://issues.apache.org/jira/browse/AMQ-9202
+                https://stackoverflow.com/questions/31058681/java-locking-structure-best-pattern
+
+           `lock.lock()` suspends the incoming thread if another thread has already
+           acquired the lock. So, the incoming thread becomes completely useless
+           till the time it wakes up again.
+         */
         this.lock.lock();
 
         try {
