@@ -7,8 +7,6 @@
     <list default="true" id="78399fc2-8b4b-4c36-ada9-6730ae6e514b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concurrency/friendsouting/FriendsOuting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concurrency/friendsouting/FriendsOuting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concurrency/inmemorylog/InMemoryLogging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concurrency/inmemorylog/InMemoryLogging.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
